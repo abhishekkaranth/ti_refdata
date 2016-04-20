@@ -2,7 +2,8 @@
 
 module TiRefdata
   class CountrySerializer < ActiveModel::Serializer
-    attributes :id, :code, :name, :region
+    attributes :id, :code, :name, :latitude, :longitude, :region
+    has_one :continent
 
     def id
       code
