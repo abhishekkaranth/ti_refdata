@@ -6,5 +6,6 @@ module TiRefdata
 
     belongs_to :continent
     has_many :cities
+    belongs_to :sub_region
   end
 end

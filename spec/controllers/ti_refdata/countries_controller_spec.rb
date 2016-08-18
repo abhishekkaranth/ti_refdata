@@ -40,7 +40,7 @@ describe TiRefdata::CountriesController do
   end
 
   describe 'GET index without filter' do
-    it 'returns an error' do
+    it 'returns all countries' do
       sign_in user
       get :index
       expect(response.status).to eq(200)

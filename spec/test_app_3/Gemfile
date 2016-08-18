@@ -5,7 +5,7 @@ gem 'rails', '~> 3.2.17'
 gem 'rails-api'
 gem 'active_model_serializers', '~> 0.7.0'
 gem 'ti_rails_auth', git: 'http://github.com/ebastien/ti_rails_auth'
-
+gem 'test-unit'
 group :test do
   gem 'test-unit', '~> 3.0'
   gem 'sqlite3'
