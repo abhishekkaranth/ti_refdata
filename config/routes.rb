@@ -9,4 +9,5 @@ TiRefdata::Engine.routes.draw do
   resources :railways, only: [:index, :show]
   resources :offlines, only: [:index, :show]
   resources :cities, only: [:index, :show]
+  resources :sub_regions, only: [:index, :show]
 end
