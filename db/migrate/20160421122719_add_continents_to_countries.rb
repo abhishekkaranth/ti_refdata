@@ -1,5 +1,7 @@
 class AddContinentsToCountries < ActiveRecord::Migration
   def change
-    add_reference :countries, :continent
+    change_table :countries do |t|
+      t.references :continent, index: true
+    end
   end
 end
