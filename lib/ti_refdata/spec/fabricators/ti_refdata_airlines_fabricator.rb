@@ -10,6 +10,7 @@ Fabricator(:airline, class_name: TiRefdata::Airline) do
   alliance_status 'Member'
   type_code ''
   page_rank 0.8
+  carrier_unique_id 1
 end
 
 Fabricator(:airline_nil_values, class_name: TiRefdata::Airline) do
@@ -22,6 +23,7 @@ Fabricator(:airline_nil_values, class_name: TiRefdata::Airline) do
   alliance_status nil
   type_code nil
   page_rank 1.0
+  carrier_unique_id 2
 end
 
 Fabricator(:dummy_airline, class_name: TiRefdata::Airline) do
@@ -34,6 +36,7 @@ Fabricator(:dummy_airline, class_name: TiRefdata::Airline) do
   alliance_status ''
   type_code 'D'
   page_rank 0.3
+  carrier_unique_id 7
 end
 
 Fabricator(:gds, class_name: TiRefdata::Airline) do
@@ -46,6 +49,7 @@ Fabricator(:gds, class_name: TiRefdata::Airline) do
   alliance_status ''
   type_code 'G'
   page_rank 1
+  carrier_unique_id 3
 end
 
 Fabricator(:cargo_airline, class_name: TiRefdata::Airline) do
@@ -58,6 +62,7 @@ Fabricator(:cargo_airline, class_name: TiRefdata::Airline) do
   alliance_status ''
   type_code 'C'
   page_rank 0.1
+  carrier_unique_id 4
 end
 
 Fabricator(:rail_way, class_name: TiRefdata::Airline) do
@@ -70,4 +75,5 @@ Fabricator(:rail_way, class_name: TiRefdata::Airline) do
   alliance_status ''
   type_code 'R'
   page_rank 0.3
+  carrier_unique_id 5
 end
