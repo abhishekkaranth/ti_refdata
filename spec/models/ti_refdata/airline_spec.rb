@@ -12,7 +12,7 @@ describe TiRefdata::Airline do
     airl.alliance_code = '1A'
     airl.alliance_status = 'Member'
     airl.type_code = 'D'
-    airl.carrier_unique_id = 1
+    airl.derived_carrier_int = 1
     airl.save
     c = TiRefdata::Airline.find airl.id
     expect(c.unified_code).to eq('6X')
@@ -24,7 +24,7 @@ describe TiRefdata::Airline do
     expect(c.alliance_code).to eq('1A')
     expect(c.alliance_status).to eq ('Member')
     expect(c.type_code).to eq ('D')
-    expect(c.carrier_unique_id).to eq (1)
+    expect(c.derived_carrier_int).to eq (1)
   end
 
   it 'filters out non regular airlines' do
