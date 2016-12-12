@@ -10,6 +10,8 @@ Fabricator(:airline, class_name: TiRefdata::Airline) do
   alliance_status 'Member'
   type_code ''
   page_rank 0.8
+  persistent_key 'air-alitalia'
+  version 1
 end
 
 Fabricator(:airline_nil_values, class_name: TiRefdata::Airline) do
@@ -22,6 +24,8 @@ Fabricator(:airline_nil_values, class_name: TiRefdata::Airline) do
   alliance_status nil
   type_code nil
   page_rank 1.0
+  persistent_key 'air-ryanair'
+  version 1
 end
 
 Fabricator(:dummy_airline, class_name: TiRefdata::Airline) do
@@ -34,6 +38,8 @@ Fabricator(:dummy_airline, class_name: TiRefdata::Airline) do
   alliance_status ''
   type_code 'D'
   page_rank 0.3
+  persistent_key 'air-amadeus-seven-x'
+  version 1
 end
 
 Fabricator(:gds, class_name: TiRefdata::Airline) do
@@ -46,6 +52,8 @@ Fabricator(:gds, class_name: TiRefdata::Airline) do
   alliance_status ''
   type_code 'G'
   page_rank 1
+  persistent_key 'gds-amadeus'
+  version 1
 end
 
 Fabricator(:cargo_airline, class_name: TiRefdata::Airline) do
